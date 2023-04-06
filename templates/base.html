@@ -21,11 +21,7 @@
 
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <!-- {%- if current_url is starting_with("http://127.0.0.1:1111/") -%}
-      <link rel="stylesheet" href="/index.css">
-    {%- else -%}
-      <style>{{ load_data(path="public/index.css") | trim | safe }}</style>
-    {%- endif -%} -->
+    <style>{{ load_data(path="public/index.css") | trim | safe }}</style>
   </head>
   <body>
     <div class="container">

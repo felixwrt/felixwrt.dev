@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "https://felixwrt.dev"
-title = "Felix's Blog"
+title = "felixwrt.dev"
+author = "Felix"
+
+theme = "papermod"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -8,10 +11,46 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+generate_feed = true
+minify_html = true
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+highlight_theme = "nord"
 
-[extra]
-# Put all your custom variables here
+
+[extra.papermod]
+title = "felixwrt.dev"
+default_theme = "auto"
+theme = "light"
+language_direction = "auto"
+keywords = ["keyword1", "keyword2", "keyword3"]
+show_theme_toggle = true
+show_scroll_to_top = true
+show_code_copy_buttons = true
+show_reading_time = true
+show_word_count = false
+show_post_nav_links = true
+show_post_meta = true
+default_toc_open = false
+show_post_edit_button = false
+edit_post_url = "https://github.com/felixwrt/felixwrt.dev"
+#copyright = ""
+date_format = "%Y-%m-%d"
+navigation = [
+    { url = "/archive", title = "Archive" },
+    # { url = "/tags", title = "Tags" },
+    # { url = "https://getzola.com/", title = "Zola", is_external = true }
+]
+
+home_title = "Felix's blog"
+home_content = "Welcome to my blog where I occationally write about Rust, systems programming and all kinds of innovative ideas."
+social_icons = [
+    { url = "https://github.com/felixwrt", title = "GitHub", icon = "github" },
+    { url = "mailto:blog@felixwrt.dev", title = "email", icon = "email" },
+    # { url = "https://infosec.exchange/@cydave", title = "Mastodon", icon = "mastodon" },
+    # { url = "https://twitter.com/_cydave", title = "Twitter", icon = "twitter" },
+    { url = "/atom.xml", title = "RSS", icon = "rss" },
+]

@@ -49,7 +49,7 @@ home_title = "Felix's blog"
 home_content = "Welcome to my blog where I occationally write about Rust, systems programming and all kinds of innovative ideas."
 social_icons = [
     { url = "https://github.com/felixwrt", title = "GitHub", icon = "github" },
-    { url = "mailto:blog@felixwrt.dev", title = "email", icon = "email" },
+    { url = "mailto:me@felixwrt.dev", title = "email", icon = "email" },
     # { url = "https://infosec.exchange/@cydave", title = "Mastodon", icon = "mastodon" },
     # { url = "https://twitter.com/_cydave", title = "Twitter", icon = "twitter" },
     { url = "/atom.xml", title = "RSS", icon = "rss" },

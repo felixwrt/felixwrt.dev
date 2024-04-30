@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://felixwrt.dev"
-title = "Felix's Blog"
+title = "felixwrt.dev"
 author = "Felix"
 
 theme = "papermod"
@@ -10,6 +10,9 @@ compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+
+generate_feed = true
+minify_html = true
 
 [markdown]
 # Whether to do syntax highlighting
@@ -46,6 +49,7 @@ home_title = "Felix's blog"
 home_content = "Welcome to my blog where I occationally write about Rust, systems programming and all kinds of innovative ideas."
 social_icons = [
     { url = "https://github.com/felixwrt", title = "GitHub", icon = "github" },
+    { url = "mailto:blog@felixwrt.dev", title = "email", icon = "email" },
     # { url = "https://infosec.exchange/@cydave", title = "Mastodon", icon = "mastodon" },
     # { url = "https://twitter.com/_cydave", title = "Twitter", icon = "twitter" },
     { url = "/atom.xml", title = "RSS", icon = "rss" },
